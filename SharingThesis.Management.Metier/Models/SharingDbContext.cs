@@ -1,5 +1,4 @@
 ﻿using MySql.Data.EntityFramework;
-using MySql.Data.MySqlClient;
 using SharingThesis.Management.Metier.Models;
 using System;
 using System.Collections.Generic;
@@ -18,5 +17,9 @@ namespace SharingThesis.Management.Metier.Models
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Commentaire> Comments { get; set; }
+        public DbSet<Td_Erreur> Errors { get; set; }
+        public DbSet<Memoire> Memories { get; set; }
+        public DbSet<Expert> Experts { get; set; }
     }
 }

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FileService
+namespace ServiceFile
 {
     using System.Runtime.Serialization;
     
@@ -50,7 +50,7 @@ namespace FileService
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="FileService.IService1")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceFile.IService1")]
     public interface IService1
     {
         
@@ -58,17 +58,17 @@ namespace FileService
         System.Threading.Tasks.Task<string> GetDataAsync(int value);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
-        System.Threading.Tasks.Task<FileService.CompositeType> GetDataUsingDataContractAsync(FileService.CompositeType composite);
+        System.Threading.Tasks.Task<ServiceFile.CompositeType> GetDataUsingDataContractAsync(ServiceFile.CompositeType composite);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    public interface IService1Channel : FileService.IService1, System.ServiceModel.IClientChannel
+    public interface IService1Channel : ServiceFile.IService1, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    public partial class Service1Client : System.ServiceModel.ClientBase<FileService.IService1>, FileService.IService1
+    public partial class Service1Client : System.ServiceModel.ClientBase<ServiceFile.IService1>, ServiceFile.IService1
     {
         
         /// <summary>
@@ -116,7 +116,7 @@ namespace FileService
             return base.Channel.GetDataAsync(value);
         }
         
-        public System.Threading.Tasks.Task<FileService.CompositeType> GetDataUsingDataContractAsync(FileService.CompositeType composite)
+        public System.Threading.Tasks.Task<ServiceFile.CompositeType> GetDataUsingDataContractAsync(ServiceFile.CompositeType composite)
         {
             return base.Channel.GetDataUsingDataContractAsync(composite);
         }

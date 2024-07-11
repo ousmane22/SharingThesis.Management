@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SharingThesis.Management.Metier.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -18,6 +19,25 @@ namespace SharingThesis.Management.Metier
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
+
+        [OperationContract]
+        bool AddExpert(Expert expert);
+
+        [OperationContract]
+        Expert GetExpertById(int id);
+
+
+        [OperationContract]
+        bool UpdateExpert(Expert expert);
+
+        [OperationContract]
+        bool DeleteExpert(int id);
+
+        [OperationContract]
+        List<Expert> GetAllExperts();
+
+        [OperationContract]
+        List<Td_Erreur> GetLogs();
 
         // TODO: ajoutez vos opérations de service ici
     }

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharingThesis.Management.Gateway", "SharingThesis.Management.Gateway\SharingThesis.Management.Gateway.csproj", "{4CB464B4-7365-478C-BDFC-CE2BEC48F727}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharingThesis.Management.Metier", "SharingThesis.Management.Metier\SharingThesis.Management.Metier.csproj", "{81475BDF-2270-4AE7-B87B-FF197F4FC12A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharingThesis.Management.File", "SharingThesis.Management.File\SharingThesis.Management.File.csproj", "{0A71DCD3-0A27-40FE-A03A-B7992B4B3FFE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharingThesis.Management.Gateway", "SharingThesis.Management.Gateway\SharingThesis.Management.Gateway.csproj", "{1A92C8E5-F772-42EC-AA3E-FA354C197634}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharingThesis.Management.Metier", "SharingThesis.Management.Metier\SharingThesis.Management.Metier.csproj", "{5A2AC920-1B12-4BFF-A118-439034633FE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4CB464B4-7365-478C-BDFC-CE2BEC48F727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4CB464B4-7365-478C-BDFC-CE2BEC48F727}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4CB464B4-7365-478C-BDFC-CE2BEC48F727}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4CB464B4-7365-478C-BDFC-CE2BEC48F727}.Release|Any CPU.Build.0 = Release|Any CPU
-		{81475BDF-2270-4AE7-B87B-FF197F4FC12A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{81475BDF-2270-4AE7-B87B-FF197F4FC12A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{81475BDF-2270-4AE7-B87B-FF197F4FC12A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{81475BDF-2270-4AE7-B87B-FF197F4FC12A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0A71DCD3-0A27-40FE-A03A-B7992B4B3FFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0A71DCD3-0A27-40FE-A03A-B7992B4B3FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A71DCD3-0A27-40FE-A03A-B7992B4B3FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A71DCD3-0A27-40FE-A03A-B7992B4B3FFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A92C8E5-F772-42EC-AA3E-FA354C197634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A92C8E5-F772-42EC-AA3E-FA354C197634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A92C8E5-F772-42EC-AA3E-FA354C197634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A92C8E5-F772-42EC-AA3E-FA354C197634}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A2AC920-1B12-4BFF-A118-439034633FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A2AC920-1B12-4BFF-A118-439034633FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A2AC920-1B12-4BFF-A118-439034633FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A2AC920-1B12-4BFF-A118-439034633FE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
