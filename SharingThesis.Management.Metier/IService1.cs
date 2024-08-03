@@ -26,7 +26,6 @@ namespace SharingThesis.Management.Metier
         [OperationContract]
         Expert GetExpertById(int id);
 
-
         [OperationContract]
         bool UpdateExpert(Expert expert);
 

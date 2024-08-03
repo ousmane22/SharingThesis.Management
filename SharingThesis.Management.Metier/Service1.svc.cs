@@ -72,35 +72,7 @@ namespace SharingThesis.Management.Metier
             }
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="expert"></param>
-        /// <returns></returns>
-        public bool UpdateExpert(Expert expert)
-        {
-            var selectedExpert = GetExpertById(expert.Id);
-
-            if (selectedExpert == null)
-            {
-                _logger.WriteDataError("UpdateExpert", $"Expert not found for update with ID: {expert.Id}");
-                return false;
-            }
-
-            try
-            {
-                selectedExpert.FirstName = expert.FirstName;
-                selectedExpert.LastName = expert.LastName;
-                selectedExpert.Email = expert.Email;
-                db.SaveChanges();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                _logger.WriteDataError("UpdateExpert", $"Error updating expert: {expert}, Exception: {ex}");
-                return false;
-            }
-        }
+      
 
         /// <summary>
         /// 
@@ -137,6 +109,36 @@ namespace SharingThesis.Management.Metier
         public List<Td_Erreur> GetLogs()
         {
             return db.Errors.ToList();
+        }
+
+        public bool UpdateExpert(Expert expert)
+        {
+
+            var selectedExpert = db.Experts.Find(expert.Id);
+
+            if (selectedExpert == null)
+            {
+                _logger.WriteDataError("UpdateExpert", $"Expert not found for update with ID: {expert.Id}");
+                return false;
+            }
+
+            try
+            {
+                selectedExpert.FirstName = expert.FirstName;
+                selectedExpert.LastName = expert.LastName;
+                selectedExpert.Email = expert.Email;
+                selectedExpert.Matricule = expert.Matricule;
+                selectedExpert.Password = expert.Password;
+                selectedExpert.Phone = expert.Phone;
+
+                db.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.WriteDataError("UpdateExpert", $"Error updating expert: {expert}, Exception: {ex}");
+                return false;
+            }
         }
     }
 }
